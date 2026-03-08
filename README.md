@@ -6,7 +6,7 @@ There is, however, nothing that says that a smaller LLM (SLM?) can't be used in 
 This project aims to recreate the example projects found in the SDG Hub repository, but with more consumer-oriented hardware in mind. First, it implements the tutorial script with the model replaced with ministral-3:3b, which is not recommended or even experimental.
 
 ## REQUIREMENTS
-1. A computer with a GPU capable of compute workloads. Preferably with >=4GiB of VRAM. 
+1. A computer with a GPU capable of compute workloads. Preferably with >=4GiB of VRAM, but 
 2. An Ollama setup with ministral-3 or equivalent.
 3. Python 3.10 or higher.
 4. An understanding that this is absolutely not what the hardware that would need this setup should be doing.
@@ -25,4 +25,5 @@ The second thing to do is install the dependencies listed in `pyproject.toml` if
 
     uv pip install datasets sdg_hub
 
-
+## AI DISCLOSURE
+Very little code was written for this using AI tools. However, Copilot was used to generate the project structure. This gave me a usable project file aside from the fact that it wrote the definitions twice. I also used it for some autocomplete.

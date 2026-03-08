@@ -24,7 +24,8 @@ if requirements:
 
 dataset = load_dataset("danidanou/Bloomberg_Financial_News", split="train") #This is the dataset used in one of SDG Hub's examples, so I will use it here for comparison.
 
-datasubset = dataset.shuffle(42).select(range(10)).rename_column("Article","text")
+datasubset = dataset.shuffle(20).select(range(10)).rename_column("Article","text")
 
 data_pd = datasubset.to_pandas()
 results = flow.generate(data_pd)
+print(f"Columns: {list(results.columns)}")
