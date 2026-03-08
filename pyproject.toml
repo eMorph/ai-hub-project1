@@ -1,0 +1,14 @@
+[project]
+name = "tiny-sdg-hub"
+version = "0.1.0"
+description = "SDG Hub flows on workstation hardware"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "sdg_hub",
+  "datasets"
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
